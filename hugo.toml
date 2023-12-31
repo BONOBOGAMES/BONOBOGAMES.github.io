@@ -1,0 +1,13 @@
+baseurl = "https://bonobo.games/"
+languageCode = 'en-us'
+contentdir    = "content"
+layoutdir     = "layouts"
+publishdir    = "public"
+title = "BONOBO GAMES"
+canonifyurls  = true
+theme = "beautifulhugo"
+metaDataFormat = "yaml"
+pygmentsUseClasses = true
+pygmentCodeFences = true
+#disqusShortname = "XXX"
+#googleAnalytics = "XXX"
