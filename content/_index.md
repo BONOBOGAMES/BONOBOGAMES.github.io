@@ -1,8 +1,9 @@
 ---
-title: "Coming Soon"
+title: "BONOBO GAMES"
 date: 2024-01-01T00:00:00Z
 draft: false
 type: "page"
+subtitle: "subtitle"
 ---
 
 # 🚀 Coming Soon

@@ -16,3 +16,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
 [Params]
   # Custom site last modified date (overrides automatic calculation)
   lastModified = "2025-01-09"
+  
+  # Header image for the main page
+  bigimg = [
+    { src = "/header.jpg" }
+  ]
