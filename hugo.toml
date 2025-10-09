@@ -9,5 +9,10 @@ theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
+ignoreLogs = ['warning-goldmark-raw-html']
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
+
+[Params]
+  # Custom site last modified date (overrides automatic calculation)
+  lastModified = "2025-01-09"
