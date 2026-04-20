@@ -1,32 +1,13 @@
 ---
 title: "BONOBO GAMES"
+subtitle: "Play nice. Make games."
 date: 2024-01-01T00:00:00Z
 draft: false
 type: "page"
-subtitle: "subtitle"
 ---
 
-# 🚀 Coming Soon
+Bonobos are the apes that chose play over politics. Good enough reason to name a studio after them.
 
-Welcome to **BONOBO GAMES**! We're working hard to bring you something amazing.
+The team is whoever shows up — open door, no contracts. Right now that's Gábor, building the first game.
 
-## What's Coming
-
-We're building an incredible gaming experience that will be worth the wait. Stay tuned for updates!
-
-## Stay Connected
-
-Follow us for the latest news and announcements:
-
-- 📧 Email updates
-- 🐦 Social media
-- 🎮 Gaming community
-
----
-
-*Thank you for your patience. Great things are coming!*
-
-<div style="text-align: center; margin-top: 2rem;">
-  <div style="font-size: 3rem; margin-bottom: 1rem;">🎮</div>
-  <p style="font-size: 1.2rem; color: #666;">Expected Launch: Coming Soon</p>
-</div>
+First up: **[Pieceful](/games/pieceful/)**. Meet the **[team](/team/)**.

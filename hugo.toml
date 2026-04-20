@@ -14,10 +14,29 @@ ignoreLogs = ['warning-goldmark-raw-html']
 #googleAnalytics = "XXX"
 
 [Params]
-  # Custom site last modified date (overrides automatic calculation)
-  lastModified = "2025-01-09"
-  
+  since        = "2024"
+  subtitle     = "Play nice. Make games."
+  comments     = false
+
   # Header image for the main page
   bigimg = [
     { src = "/header.jpg" }
   ]
+
+[Params.Author]
+  name    = "BONOBO GAMES"
+  email   = "gsm@bonobo.games"
+  github  = "BONOBOGAMES"
+  twitter = "bonobogames_hun"
+  reddit  = "GSM_BONOBO"
+
+[[menu.main]]
+  name   = "Games"
+  url    = "/games/"
+  weight = 1
+
+[[menu.main]]
+  name   = "Team"
+  url    = "/team/"
+  weight = 2
+

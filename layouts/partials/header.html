@@ -35,78 +35,16 @@
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="{{ .Type }}-heading">
-                <!-- Custom logo display with color shine effect -->
                 <div class="logo-container" style="text-align: center; margin-bottom: 2rem;">
-                  <div class="colored-logo-wrapper" style="
-                    position: relative; 
-                    display: inline-block; 
-                    max-height: 200px; 
+                  <img src="/logo.png" alt="{{ $title }}" style="
+                    max-height: 200px;
                     max-width: 100%;
-                  ">
-                    <!-- Colored background that will show through the logo -->
-                    <div class="logo-bg" style="
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      width: 100%;
-                      height: 100%;
-                      background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57);
-                      background-size: 400% 400%;
-                      animation: logoColorShift 3s ease-in-out infinite;
-                      z-index: 1;
-                    "></div>
-                    <!-- Logo that acts as a stencil/mask -->
-                    <img src="/logo.png" alt="{{ $title }}" style="
-                      max-height: 200px; 
-                      max-width: 100%; 
-                      height: auto; 
-                      width: auto; 
-                      display: block;
-                      position: relative;
-                      z-index: 2;
-                      mix-blend-mode: multiply;
-                    " />
-                  </div>
+                    height: auto;
+                    width: auto;
+                    display: block;
+                    margin: 0 auto;
+                  " />
                 </div>
-                
-                <style>
-                  @keyframes logoColorShift {
-                    0% { background-position: 0% 50%; }
-                    50% { background-position: 100% 50%; }
-                    100% { background-position: 0% 50%; }
-                  }
-                  
-                  .colored-logo-wrapper:hover .logo-bg {
-                    animation-duration: 1s;
-                    background: linear-gradient(45deg, #ff9a9e, #fecfef, #fecfef, #ff9a9e);
-                    background-size: 400% 400%;
-                  }
-                  
-                  /* Ensure the multiply stencil effect works */
-                  .colored-logo-wrapper {
-                    isolation: isolate;
-                  }
-                  
-                  .colored-logo-wrapper img {
-                    mix-blend-mode: multiply;
-                    background: transparent;
-                  }
-                  
-                  /* Fallback for browsers that don't support mix-blend-mode */
-                  @supports not (mix-blend-mode: multiply) {
-                    .colored-logo-wrapper .logo-bg {
-                      display: none;
-                    }
-                    .colored-logo-wrapper img {
-                      mix-blend-mode: normal;
-                      filter: hue-rotate(45deg) saturate(1.5) brightness(1.2);
-                      transition: filter 0.3s ease;
-                    }
-                    .colored-logo-wrapper:hover img {
-                      filter: hue-rotate(90deg) saturate(2) brightness(1.4);
-                    }
-                  }
-                </style>
                   {{ if $subtitle }}
                     {{ if eq .Type "page" }}
                       <hr class="small">
