@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function Home() {
   return (
-    <>
+    <div className="relative">
       {/* Hero */}
       <section className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0">
@@ -14,7 +14,7 @@ export default function Home() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/50 dark:bg-black/65" />
         </div>
         <div className="relative text-center px-6">
           <Image
@@ -29,32 +29,9 @@ export default function Home() {
             Play nice. Make games.
           </p>
         </div>
-        {/* Scroll hint */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-500 text-xs tracking-widest animate-bounce">
-          ↓
-        </div>
       </section>
-
-      {/* Intro */}
-      <section className="max-w-2xl mx-auto px-6 py-28">
-        <p className="text-gray-300 text-lg leading-relaxed mb-5">
-          Bonobos are the apes that chose play over politics. Good enough reason to name a studio after them.
-        </p>
-        <p className="text-gray-300 text-lg leading-relaxed mb-5">
-          The team is whoever shows up — open door, no contracts. Right now that's Gábor, building the first game.
-        </p>
-        <p className="text-gray-400 text-lg leading-relaxed">
-          First up:{' '}
-          <Link href="/games/pieceful" className="text-lime-400 hover:underline">
-            Pieceful
-          </Link>
-          . Meet the{' '}
-          <Link href="/team" className="text-lime-400 hover:underline">
-            team
-          </Link>
-          .
-        </p>
-      </section>
-    </>
+      {/* Negative margin to pull footer up */}
+      <div className="-mt-24"></div>
+    </div>
   )
 }

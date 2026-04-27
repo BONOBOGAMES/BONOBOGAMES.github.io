@@ -7,7 +7,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-white/10 mt-24">
+    <footer className="border-t border-gray-200 dark:border-white/10 mt-24 transition-colors duration-300">
       <div className="max-w-4xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
         <span>© {new Date().getFullYear()} BONOBO GAMES</span>
         <div className="flex gap-6">
@@ -15,7 +15,7 @@ export default function Footer() {
             <a
               key={label}
               href={href}
-              className="hover:text-white transition-colors"
+              className="hover:text-gray-900 dark:hover:text-white transition-colors"
               target={href.startsWith('mailto') ? undefined : '_blank'}
               rel={href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
             >
