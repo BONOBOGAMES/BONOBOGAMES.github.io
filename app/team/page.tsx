@@ -1,11 +1,18 @@
 import type { Metadata } from 'next'
+import TeamMember from '@/components/TeamMember'
 
 export const metadata: Metadata = {
   title: 'Team — BONOBO GAMES',
 }
 
 const members = [
-  { name: 'Gábor Simon', role: 'Founder, developer' },
+  {
+    name: 'Gábor Simon',
+    nickname: 'Sala',
+    role: 'Founder, developer',
+    avatar: '/gabor-avatar.png',
+    avatarHighRes: '/sala.png'
+  },
 ]
 
 export default function TeamPage() {
@@ -23,12 +30,9 @@ export default function TeamPage() {
         .
       </p>
 
-      <div className="border-t border-gray-200 dark:border-white/10 pt-8 space-y-6">
-        {members.map(({ name, role }) => (
-          <div key={name}>
-            <p className="font-semibold">{name}</p>
-            <p className="text-gray-500 text-sm mt-0.5">{role}</p>
-          </div>
+      <div className="border-t border-gray-200 dark:border-white/10 pt-8 space-y-8">
+        {members.map((member) => (
+          <TeamMember key={member.name} {...member} />
         ))}
       </div>
     </div>
